@@ -1,0 +1,12 @@
+/system/tmp/cache
+!/system/tmp/cache/index.html
+/system/tmp/log
+!/system/tmp/log/index.html
+/system/tmp/model
+!/system/tmp/model/index.html
+/system/tmp/package
+!/system/tmp/package/index.html
+/system/tmp/theme
+!/system/tmp/theme/index.html
+.idea/
+www/data/upload/

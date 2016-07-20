@@ -1,0 +1,4 @@
+$(function()
+{
+	$('#productwin').perfectScrollbar();
+});
