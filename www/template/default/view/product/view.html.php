@@ -116,7 +116,7 @@ js::execute($product->js);
                 <td class="b"><?php echo substr($file->addedDate, 0, 10) ?></td>
 <!--                <td class="b">--><?php //echo round($file->size / 1000) . 'KB'; ?><!--</td>-->
                 <td class="b">
-                  <a href="<?php echo $webRoot . 'data/upload/' . $file->pathname; ?>" download="<?php echo $file->title; ?>">下载</a>
+                  <a href="<?php echo 'file-download-'.$file->id.'-left.html'; ?>" download="<?php echo $file->title; ?>">下载</a>
                 </td>
               </tr>
             <?php } ?>
