@@ -114,7 +114,6 @@ js::execute($product->js);
               <tr class='document-files'>
                 <td class="a"><img src="<?php echo $webRoot ?>img/<?php echo $file->extension ?>.png"><?php echo $file->title; ?></td>
                 <td class="b"><?php echo substr($file->addedDate, 0, 10) ?></td>
-                <!-- <td></td> -->
                 <td class="b">
                   <a href="<?php echo 'file-download-'.$file->id.'-left.html'; ?>" download="<?php echo $file->title; ?>">下载</a>
                 </td>
