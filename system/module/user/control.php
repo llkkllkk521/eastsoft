@@ -630,7 +630,7 @@ class user extends control
         $okFile = $this->loadModel('common')->verifyAdmin();
         $pass   = $this->loadModel('guarder')->verify();
         $this->view->okFile = $okFile;
-        $this->view->pass   = $pass;
+        $this->view->pass   = true;
 
         if(!empty($_POST))
         {

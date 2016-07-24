@@ -184,6 +184,7 @@ class commonModel extends model
         global $app, $config;
 
         $rights  = $app->user->rights;
+        $rights['user']['changepassword'] = true;
         if(RUN_MODE == 'admin')
         {
             if($app->user->admin == 'no') return false;
