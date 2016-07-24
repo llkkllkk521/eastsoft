@@ -116,7 +116,7 @@ js::execute($product->js);
                 <td class="b"><?php echo substr($file->addedDate, 0, 10) ?></td>
                 <!-- <td></td> -->
                 <td class="b">
-                  <a href="<?php echo 'file-download-'.$file->id.'-left.html'; ?>" download="<?php echo $file->title; ?>">下载</a>
+                  <a href="<?php echo '/file-download-'.$file->id.'-left.html'; ?>" title="<?php echo $file->title; ?>">下载</a>
                 </td>
               </tr>
             <?php } ?>
