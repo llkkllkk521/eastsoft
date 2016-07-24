@@ -628,9 +628,10 @@ class user extends control
 
         /* use email captcha. */
         $okFile = $this->loadModel('common')->verifyAdmin();
-        $pass   = $this->loadModel('guarder')->verify();
+        //$pass   = $this->loadModel('guarder')->verify();
+        $pass   = true;
         $this->view->okFile = $okFile;
-        $this->view->pass   = true;
+        $this->view->pass   = $pass;
 
         if(!empty($_POST))
         {
