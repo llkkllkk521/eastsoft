@@ -80,7 +80,7 @@ if(isset($pageCSS)) css::internal($pageCSS);
 
 <?php
   //轮播图
-  $carrousel = $this->dao->select('*')->from('es_file')
+  $carrousel = $this->dao->select('pathname')->from('es_file')
                 ->where('objectType')->eq('carrousel')
                 ->orderBy('`id`, editor_desc')
                 ->fetchAll();
@@ -89,7 +89,7 @@ if(isset($pageCSS)) css::internal($pageCSS);
   	$top_id = $_cat[1];
   }
   if($top_id) {
-  	$categoryImage = $this->dao->select('*')->from('es_file')
+  	$categoryImage = $this->dao->select('pathname')->from('es_file')
   	->where('objectType')->eq('category')
   	->andWhere('objectID')->eq($top_id)
   	->fetch();

@@ -38,7 +38,7 @@ class index extends control
         }
 
         //SMART 产品分类信息
-        $product = $this->dao->select('*')->from('es_category')
+        $product = $this->dao->select('id,name')->from('es_category')
                     ->where('type')->eq('product')
                     ->andWhere('parent')->eq(1)
                     ->andWhere('lang')->eq('zh-cn')
@@ -52,17 +52,17 @@ class index extends control
                             ->fetchAll();
         }
         //变更通知部分
-        $field = $this->dao->select('t1.*, t2.*')->from('es_article')->alias('t1')
+        $field = $this->dao->select('t1.id,t1.title,t1.addedDate')->from('es_article')->alias('t1')
                     ->leftJoin('es_relation')->alias('t2')->on('t1.id = t2.id')
                     ->where('t2.category')->eq(19)->limit(5)
                     ->fetchAll();
         //公司新闻
-        $company = $this->dao->select('*')->from('es_article')->alias('t1')
+        $company = $this->dao->select('t1.id,t1.title')->from('es_article')->alias('t1')
                     ->leftJoin('es_relation')->alias('t2')->on('t1.id = t2.id')
                     ->where('t2.category')->eq(20)->limit(3)
                     ->fetchAll();
         //应用与解决方案
-        $solution = $this->dao->select('*')->from('es_category')
+        $solution = $this->dao->select('id,name')->from('es_category')
                     ->where('type')->eq('article')
                     ->andWhere('parent')->eq(2)
                     ->andWhere('lang')->eq('zh-cn')

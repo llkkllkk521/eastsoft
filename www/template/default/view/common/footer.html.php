@@ -15,10 +15,10 @@
         <div class="block">
 
             <?php
-            $abt_top = $this->dao->select('*')->from('es_category')
+            $abt_top = $this->dao->select('id,name')->from('es_category')
                 ->where('id')->eq(28)->fetch();
 
-            $aboutus = $this->dao->select('*')->from('es_category')
+            $aboutus = $this->dao->select('id,name')->from('es_category')
                 ->where('parent')->eq(28)->limit(5)
                 ->fetchAll();
             ?>
@@ -85,10 +85,10 @@
         <div class="block">
 
             <?php
-            $tch_top  = $this->dao->select('*')->from('es_category')
+            $tch_top  = $this->dao->select('id,name')->from('es_category')
                 ->where('id')->eq(3)->fetch();
 
-            $tech     = $this->dao->select('*')->from('es_category')
+            $tech     = $this->dao->select('id,name')->from('es_category')
                 ->where('parent')->eq(3)->limit(3)
                 ->fetchAll();
             ?>
@@ -115,10 +115,10 @@
         <div class="block">
 
             <?php
-            $news_top  = $this->dao->select('*')->from('es_category')
+            $news_top  = $this->dao->select('id,name')->from('es_category')
                 ->where('id')->eq(29)->fetch();
 
-            $news     = $this->dao->select('*')->from('es_category')
+            $news     = $this->dao->select('id,name')->from('es_category')
                 ->where('parent')->eq(29)->limit(5)
                 ->fetchAll();
             ?>
@@ -139,10 +139,10 @@
         <div class="block">
 
             <?php
-            $news_top  = $this->dao->select('*')->from('es_category')
+            $news_top  = $this->dao->select('id,name')->from('es_category')
                 ->where('id')->eq(84)->fetch();
 
-            $news     = $this->dao->select('*')->from('es_category')
+            $news     = $this->dao->select('id,name')->from('es_category')
                 ->where('parent')->eq(84)->limit(5)
                 ->fetchAll();
             ?>
