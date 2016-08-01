@@ -1,5 +1,32 @@
 <?php if(!defined("RUN_MODE")) die();?>
-<?php include TPL_ROOT . 'common/header.html.php';?>
+<!--将页面头部做缓存-->
+<?php
+/*缓存文件位置*/
+$cache_dir        = $_SERVER['DOCUMENT_ROOT'].'/block_cache';
+$cache_dir_header = $_SERVER['DOCUMENT_ROOT'].'/cache';
+$cache_filename = $cache_dir.'/header_block.html';
+if(!is_dir($cache_dir_header)){
+    @mkdir($cache_dir_header,0777,true);
+}
+if(!is_dir($cache_dir)){
+    @mkdir($cache_dir,0777,true);
+}
+
+$dependency_cache = is_file($cache_dir_header.'/sign.php') ? file_get_contents($cache_dir_header.'/sign.php') : 0;
+if($header_tag == $dependency_cache && is_file($cache_filename)){
+    echo file_get_contents($cache_filename);
+}else{
+    ob_start();
+    include TPL_ROOT . 'common/header.html.php';
+    $content = ob_get_contents();/*获取缓存输出的内容*/
+    $fp = fopen($cache_filename, "w"); //输出内容写入文件
+    fwrite($fp, $content);
+    fclose($fp);
+    ob_end_flush();
+    file_put_contents($cache_dir_header.'/sign.php',$header_tag);
+}
+?>
+<?php //include TPL_ROOT . 'common/header.html.php';?>
 <?php include TPL_ROOT . 'common/treeview.html.php';?>
 
 <?php
@@ -198,4 +225,31 @@
 
 </div>
 
-<?php include TPL_ROOT . 'common/footer.html.php';?>
+<!--缓存页脚-->
+<?php
+/*缓存文件位置*/
+$cache_dir        = $_SERVER['DOCUMENT_ROOT'].'/block_cache';
+$cache_dir_footer = $_SERVER['DOCUMENT_ROOT'].'/cache';
+$cache_filename = $cache_dir.'/footer_block.html';
+if(!is_dir($cache_dir_footer)){
+    @mkdir($cache_dir_footer,0777,true);
+}
+if(!is_dir($cache_dir)){
+    @mkdir($cache_dir,0777,true);
+}
+
+$dependency_cache = is_file($cache_dir_footer.'/footer_sign.php') ? file_get_contents($cache_dir_footer.'/footer_sign.php') : 0;
+if($footer_tag == $dependency_cache && is_file($cache_filename)){
+    echo file_get_contents($cache_filename);
+}else{
+    ob_start();
+    include TPL_ROOT . 'common/footer.html.php';
+    $content = ob_get_contents();/*获取缓存输出的内容*/
+    $fp = fopen($cache_filename, "w"); //输出内容写入文件
+    fwrite($fp, $content);
+    fclose($fp);
+    ob_end_flush();
+    file_put_contents($cache_dir_footer.'/footer_sign.php',$footer_tag);
+}
+?>
+<?php //include TPL_ROOT . 'common/footer.html.php';?>

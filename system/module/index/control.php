@@ -68,6 +68,14 @@ class index extends control
                     ->andWhere('lang')->eq('zh-cn')
                     ->fetchAll();
 
+        /*获取header分类总数*/
+        $category_total = $this->dao->select('count(*) as count')->from('es_category')->fetchAll();
+        $this->view->header_tag = $category_total[0]->count;
+
+        /*获取尾部footer*/
+        $category_total = $this->dao->select('count(*) as count')->from('es_block')->fetchAll();
+        $this->view->footer_tag = $category_total[0]->count;
+
         $this->view->title      = $this->config->site->indexKeywords;
         $this->view->mobileURL  = helper::createLink('index', 'index', '', '', 'mhtml');
         $this->view->desktopURL = helper::createLink('index', 'index', '', '', 'html');
