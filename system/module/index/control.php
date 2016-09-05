@@ -54,7 +54,7 @@ class index extends control
         //变更通知部分
         $field = $this->dao->select('t1.id,t1.title,t1.addedDate')->from('es_article')->alias('t1')
                     ->leftJoin('es_relation')->alias('t2')->on('t1.id = t2.id')
-                    ->where('t2.category')->eq(19)->limit(5)
+                    ->where('t2.category')->eq(19)->orderBy('id_desc')->limit(5)
                     ->fetchAll();
         //公司新闻
         $company = $this->dao->select('t1.id,t1.title')->from('es_article')->alias('t1')
