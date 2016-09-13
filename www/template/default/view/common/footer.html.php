@@ -177,9 +177,9 @@
 " language="JavaScript"></script>
         <div style="float: right;">Copyright 2016&nbsp; <a href="/">上海东软载波微电子有限公司</a>版权所有 沪ICP备07005227号</div>
     </div>
- <div style="text-align:center;"><img src="../../img/foot.jpg"  alt="" width="327" height="48"/><a href='http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120227152149763' target='_blank'><img src='../../img/gs.png' border=0></a>
-</div>
-<script>(function(){var c=document.createElement("script"),s=document.getElementsByTagName("script")[0];c.src="//kefu.qycn.com/vclient/state.php?webid=41014";s.parentNode.insertBefore(c,s);})();</script>
+    <div style="text-align:center;"><img src="../../img/foot.jpg"  alt="" width="327" height="48"/><a href='http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20120227152149763' target='_blank'><img src='../../img/gs.png' border=0></a>
+    </div>
+    <script>(function(){var c=document.createElement("script"),s=document.getElementsByTagName("script")[0];c.src="//kefu.qycn.com/vclient/state.php?webid=41014";s.parentNode.insertBefore(c,s);})();</script>
 </div>
 
 <script type="text/javascript">
@@ -192,11 +192,6 @@
     }
 
 </script>
-<script type="text/javascript">var host1 = window.location.host ? window.location.host : document.domain;
-    var host2 = 'www.essemi.com';
-    if( host1 == 'www.ichaier.com' || host1 == 'ichaier.com'){
-        window.location.href = window.location.href.replace( host1, host2 );
-    }</script>
 
 <!-- <footer id='footer' class='clearfix'>
     <div class='wrapper'>

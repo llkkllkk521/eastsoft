@@ -120,7 +120,7 @@ include TPL_ROOT . 'common/treeview.html.php';
             <span class='r'>ALL</span>
             <span class='b'>显示所有参数</span>
           </a>
-            <a href="/data/source/Cat.03.2016.SMART-03.pdf" style="float: right;">
+            <a href="/data/source/Cat.SMART.pdf" style="float: right;">
                 <img src="/img/pdf.png">选型手册下载
             </a>
         </div>

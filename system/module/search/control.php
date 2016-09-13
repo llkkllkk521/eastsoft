@@ -22,7 +22,7 @@ class search extends control
      */
     public function index($words = '', $pageID = 1)
     {
-        if(empty($words)) $words = $this->get->words;
+        $words = $this->get->words;
         $words = strip_tags(strtolower($words));
 
         if(isset($this->config->cn2tw) and $this->config->cn2tw and $this->app->getClientLang() == 'zh-tw')
