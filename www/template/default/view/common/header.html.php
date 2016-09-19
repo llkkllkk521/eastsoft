@@ -86,7 +86,7 @@ if(isset($pageCSS)) css::internal($pageCSS);
                 ->fetchAll();
   if($article->id && $category->id) {
   	$_cat = explode(',', $category->path);
-  	$top_id = $_cat[1];
+  	//$top_id = $_cat[1];
   }
   if($top_id) {
   	$categoryImage = $this->dao->select('pathname')->from('es_file')
