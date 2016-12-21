@@ -1,0 +1,47 @@
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=O4mhsUHp6mxZzlGkSCMe5jCH"></script>
+<div id="allmap">&nbsp;</div>
+<script type="text/javascript">
+	// 百度地图API功能	
+	map = new BMap.Map("allmap");
+	map.centerAndZoom(new BMap.Point(115.775991,27.207091), 6);
+	//map.setMapStyle({style:'light'}); //地图样式可不要
+	map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+	map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+	map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+  // 添加带有定位的导航控件
+  var navigationControl = new BMap.NavigationControl({
+    anchor: BMAP_ANCHOR_TOP_LEFT,
+    type: BMAP_NAVIGATION_CONTROL_LARGE,
+  });
+  //导航控件结束
+  map.addControl(navigationControl);
+    enableGeolocation: true
+
+	var data_info = [[120.372777,31.51292,"无锡合普瑞传感科技有限公司"],
+					 [113.970509,22.591676,"深圳市惠贻华普电子有限公司"]
+					];
+	var opts = {
+				width : 250,     // 信息窗口宽度
+				height: 80,     // 信息窗口高度
+				title : "华普微电子有限公司" , // 信息窗口标题
+				enableMessage:true//设置允许信息窗发送短息
+			   };
+	for(var i=0;i<data_info.length;i++){
+		var marker = new BMap.Marker(new BMap.Point(data_info[i][0],data_info[i][1]));  // 创建标注
+		var content = data_info[i][2];
+		map.addOverlay(marker);               // 将标注添加到地图中
+		addClickHandler(content,marker);
+	}
+	function addClickHandler(content,marker){
+	marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+		marker.addEventListener("click",function(e){
+			openInfo(content,e)}
+		);
+	}
+	function openInfo(content,e){
+		var p = e.target;
+		var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+		var infoWindow = new BMap.InfoWindow(content,opts);  // 创建信息窗口对象 
+		map.openInfoWindow(infoWindow,point); //开启信息窗口
+	}
+</script>
