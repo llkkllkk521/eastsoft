@@ -105,10 +105,10 @@
                 </p>
             <?php } ?>
             <p class="sub">
-                <a href="<?php echo $siteRoot . 'article/c81.html'; ?>">培训中心</a>
+                <a href="<?php echo $siteRoot . 'article/c81.html'; ?>">Training center</a>
             </p>
             <p class="sub">
-                <a href="<?php echo $siteRoot . 'article/c83.html'; ?>">应用文档</a>
+                <a href="<?php echo $siteRoot . 'article/c83.html'; ?>">App doc</a>
             </p>
 
         </div>

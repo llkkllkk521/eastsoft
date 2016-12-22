@@ -29,7 +29,7 @@ if(isset($pageCSS)) css::internal($pageCSS);
       <div class="logo"></div>
     </div>
     <div class="right">
-      <div class="customer">客服热线：</div>
+      <div class="customer">Service HotLine：</div>
       <div class="tel"></div>
       <div class="login">
 
@@ -69,9 +69,9 @@ if(isset($pageCSS)) css::internal($pageCSS);
         </a>
       <?php } ?>
       <div class="search">
-        <div class="select">全部</div>
+        <div class="select">ALL</div>
         <form action="<?php echo $siteRoot . 'search.html' ?>" method="get">
-          <input type='text' name='words' placeholder="请输入搜索关键字"></input>
+          <input type='text' name='words' placeholder="Please enter search keywords"></input>
           <input type='submit' class='mag' value=''></input>
         </form>
       </div>
