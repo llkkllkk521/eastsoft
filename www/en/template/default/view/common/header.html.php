@@ -38,8 +38,8 @@ if(isset($pageCSS)) css::internal($pageCSS);
           <?php echo sprintf($lang->welcome, "<a href='" . $webRoot . "user-profile.html'>". $this->app->user->realname . "</a>"); ?>
           </p>
         <?php }else{ ?>
-          <a href="<?php echo $siteRoot . 'user-login'?>" class="butn signin">登录</a>
-          <a href="<?php echo $siteRoot . 'user-register'?>" class="butn register">注册</a>
+          <a href="<?php echo $siteRoot . 'user-login'?>" class="butn signin">Login</a>
+          <a href="<?php echo $siteRoot . 'user-register'?>" class="butn register">Register</a>
         <?php } ?>
         
       </div>

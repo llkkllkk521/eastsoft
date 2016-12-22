@@ -221,7 +221,7 @@ ul,ol,li,a,a:hover{list-style:none;text-decoration: none;}
 						    <td valign="top" colspan="2" height="20"><?php echo str_replace('en', 'en/index.php', html::a($url, $article->title));?></td>
 						  </tr>
 						  <tr>
-						    <td width="15%" height="80" valign="top">推荐产品：</td>
+						    <td width="15%" height="80" valign="top">Recommend：</td>
 							<td valign="top">
 								<?php foreach($this->loadModel('article')->getRelevanceProduct($article->id) AS $product):?>
 			                    <?php echo '<div style="padding:0 10px 0 10px;"><a href="/en/index.php/product/'.$product->id.'.html" target="_blank">'.$product->name.'</a></div>';?>
@@ -259,7 +259,7 @@ ul,ol,li,a,a:hover{list-style:none;text-decoration: none;}
 	                    <td colspan="2" style="padding-top:15px;">
 	                    <?php echo $article->summary;?>
 	                    <?php if($this->loadModel('article')->getRelevanceProduct($article->id)):?>
-	                    推荐产品：
+                        Recommend：
 	                    <?php foreach($this->loadModel('article')->getRelevanceProduct($article->id) AS $product):?>
 	                    <?php echo '<span style="padding:0 10px 0 10px;"><a href="/en/index.php/product/'.$product->id.'.html" target="_blank">'.$product->name.'</a></span>';?>
 	                    <?php endforeach;?>
@@ -303,7 +303,7 @@ ul,ol,li,a,a:hover{list-style:none;text-decoration: none;}
 						    <td valign="top" colspan="2" height="20"><?php echo str_replace('en', 'en/index.php', html::a($url, $article->title));?></td>
 						  </tr>
 						  <tr>
-						    <td width="15%" height="80" valign="top">推荐产品：</td>
+						    <td width="15%" height="80" valign="top">Recommend：</td>
 							<td valign="top">
 								<?php foreach($this->loadModel('article')->getRelevanceProduct($article->id) AS $product):?>
 			                    <?php echo '<div style="padding:0 10px 0 10px;"><a href="/en/index.php/product/'.$product->id.'.html" target="_blank">'.$product->name.'</a></div>';?>
@@ -426,7 +426,7 @@ ul,ol,li,a,a:hover{list-style:none;text-decoration: none;}
 	                  <td colspan="2" style="padding-top:15px;">
 	                  <?php echo $article->summary;?>
 	                  <?php if($this->loadModel('article')->getRelevanceProduct($article->id)):?>
-	                  推荐产品：
+                      Recommend：
 	                  <?php foreach($this->loadModel('article')->getRelevanceProduct($article->id) AS $product):?>
 	                  <?php echo '<span style="padding:0 10px 0 10px;"><a href="/en/index.php/product/'.$product->id.'.html" target="_blank">'.$product->name.'</a></span>';?>
 	                  <?php endforeach;?>

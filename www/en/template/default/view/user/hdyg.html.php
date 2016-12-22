@@ -28,7 +28,7 @@
                 <tr>
                   <td colspan="2" style="padding-top:15px;">
                   <?php if($this->loadModel('article')->getRelevanceProduct($article->id)):?>
-                  推荐产品：
+                  Recommend：
                   <?php foreach($this->loadModel('article')->getRelevanceProduct($article->id) AS $product):?>
                   <?php echo '<span style="padding:0 10px 0 10px;"><a href="/product/'.$product->id.'.html" target="_blank">'.$product->name.'</a></span>';?>
                   <?php endforeach;?>

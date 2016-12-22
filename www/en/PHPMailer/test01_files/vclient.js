@@ -1,1 +1,0 @@
-var kfvcapiPreLoaded = 1;

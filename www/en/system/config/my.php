@@ -11,7 +11,7 @@ $config->requestType  = 'PATH_INFO';
 
 $config->db->host     = '127.0.0.1';
 $config->db->port     = '3306';
-$config->db->name     = 'eneastsoft';
-$config->db->user     = 'eneastsoft';
-$config->db->password = '1z2x3c4v5b';
+$config->db->name     = 'eastsoft';
+$config->db->user     = 'root';
+$config->db->password = '123456';
 $config->db->prefix   = 'es_';
