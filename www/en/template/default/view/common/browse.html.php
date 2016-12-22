@@ -175,11 +175,11 @@ ul,ol,li,a,a:hover{list-style:none;text-decoration: none;}
   	          <?php $url = inlink('view', "id=$article->id", "category={$article->category->alias}&name=$article->alias");?>
   	          <table style="width:100%;border: 1px solid #ccc;">
   	            <tr class="title">
-  	              <td>软件名称</td>
-  	              <td align="center">发布时间</td>
-<!--  	              <td align="center">大小</td>-->
-  	              <td align="center">版本号</td>
-  	              <td align="center">操作</td>
+                    <td>Software  name</td>
+                    <td align="center">Release</td>
+                    <!--  	              <td align="center">大小</td>-->
+                    <td align="center">Version</td>
+                    <td align="center">Download</td>
   	            </tr>
   	            <?php foreach($articlelist as $article):?>
   	            <?php  $file=$this->loadModel('file')->getByObject('article', $article->id);?>
@@ -338,11 +338,11 @@ ul,ol,li,a,a:hover{list-style:none;text-decoration: none;}
 	          <?php $url = inlink('view', "id=$article->id", "category={$article->category->alias}&name=$article->alias");?>
 	          <table style="width:100%;border: 1px solid #ccc;">
 	            <tr class="title">
-	              <td>软件名称</td>
-	              <td align="center">发布时间</td>
-<!--	              <td align="center">大小</td>-->
-	              <td align="center">版本号</td>
-	              <td align="center">操作</td>
+                    <td>Software  name</td>
+                    <td align="center">Release</td>
+                    <!--  	              <td align="center">大小</td>-->
+                    <td align="center">Version</td>
+                    <td align="center">Download</td>
 	            </tr>
 	            <?php foreach($articlelist as $article):?>
 	            <?php  $file=$this->loadModel('file')->getByObject('article', $article->id);?>
