@@ -77,7 +77,7 @@ if($header_tag == $dependency_cache && is_file($cache_filename)){
                 </div>
             <?php } ?>
             <a href="<?php echo $siteRoot ?>product/c1.html" class="more">
-                更多 >>
+                More >>
             </a>
         </div>
         <!-- 中间变更通知 -->
@@ -103,7 +103,7 @@ if($header_tag == $dependency_cache && is_file($cache_filename)){
             </div>
             <?php } ?>
             <a href="<?php echo $siteRoot ?>article/c19.html" class="more">
-                更多 >>
+                More >>
             </a>
         </div>
         <!-- 右边公司新闻 -->
@@ -127,7 +127,7 @@ if($header_tag == $dependency_cache && is_file($cache_filename)){
             </div>
             <?php } ?>
             <a href="<?php echo $siteRoot ?>article/c20.html" class="more" style="bottom: 70px;">
-                更多 >>
+                More >>
             </a>
             <div style="margin-top: 40px;" class="download-icon" onmouseover="this.style.cursor='pointer'" onclick="document.location='<?php echo $siteRoot ?>article/c83.html';"></div>
         </div>

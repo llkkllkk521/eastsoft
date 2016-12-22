@@ -39,7 +39,7 @@ js::import($jsRoot     . 'my.js');
 </div>
 
 <div class="btns">
-	<input type="button" id="reset_filter" value="重置筛选条件" class='btn'/>
+	<input type="button" id="reset_filter" value="Reset" class='btn'/>
 </div>
 
 <div class="product-box">
@@ -47,7 +47,7 @@ js::import($jsRoot     . 'my.js');
 	<table class='parameters' id="param_table">
 		<thead>
 			<tr>
-				<th>芯片</th>
+				<th>Chip</th>
 				<?php foreach ($attr as $atr) { ?>
 				<th><?php echo $atr->name; ?></th>
 				<?php } ?>
@@ -68,7 +68,7 @@ js::import($jsRoot     . 'my.js');
 				?>
 				<td>
 				<select class='filter_select' name='<?php echo $atr->id ?>'>
-					<option value='0'>筛选</option>
+					<option value='0'>Filter</option>
 					<?php foreach ($drop as $options) { ?>
 						<?php if (isset($filter[$atr->id]) && isset($filter[$atr->id]['id']) && $filter[$atr->id]['id'] == $options[0]->id) { ?>
 						<option value="<?php echo $options[0]->id; ?>" selected="selected">

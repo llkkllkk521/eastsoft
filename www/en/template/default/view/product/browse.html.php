@@ -118,10 +118,10 @@ include TPL_ROOT . 'common/treeview.html.php';
         <div class="show-all">
           <a href="<?php echo $this->createLink('index.php/product', 'showall', 'categoryID=' . $category->id) ?>" target="_blank">
             <span class='r'>ALL</span>
-            <span class='b'>显示所有参数</span>
+            <span class='b'>Parameters</span>
           </a>
             <a href="/en/data/source/Cat.SMART.pdf" style="float: right;">
-                <img src="/img/pdf.png">选型手册下载
+                <img src="/img/pdf.png">Download  Selection Guide
             </a>
         </div>
         <!--参数表表头，不跟随滑动。开始-->
@@ -131,7 +131,7 @@ include TPL_ROOT . 'common/treeview.html.php';
               <tr>
                   <th align="center">
                       <div class="thHead thHead0">
-                      芯片
+                      Chip
                       </div>
                   </th>
                   <?php foreach ($attr as $key=>$atr) { ?>

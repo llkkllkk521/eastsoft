@@ -57,7 +57,7 @@ js::execute($product->js);
       </div>
 
       <div class="product-content-title">
-        芯片简介
+       Chip instruction
       </div>
       <div class="product-desc">
         <?php
@@ -83,7 +83,7 @@ js::execute($product->js);
         <?php echo $product->desc; ?>
       </div>
       <div class="product-content-title">
-        文档
+          Document
         <div class="wrapper">
           <div class="tran"></div>
         </div>
@@ -116,7 +116,7 @@ js::execute($product->js);
                 <td class="b"><?php echo substr($file->addedDate, 0, 10) ?></td>
 <!--                <td class="b">--><?php //echo round($file->size / 1000) . 'KB'; ?><!--</td>-->
                 <td class="b">
-                  <a href="<?php echo '/en/index.php/file-download-'.$file->id.'-left.html'; ?>" download="<?php echo $file->title; ?>">下载</a>
+                  <a href="<?php echo '/en/index.php/file-download-'.$file->id.'-left.html'; ?>" download="<?php echo $file->title; ?>">Download</a>
                 </td>
               </tr>
             <?php } ?>
@@ -131,7 +131,7 @@ js::execute($product->js);
       </div>
 
       <div class="product-content-title">
-        产品订购信息
+          Product order information
         <div class="wrapper">
           <div class="tran"></div>
         </div>
@@ -142,8 +142,8 @@ js::execute($product->js);
       </div>
 
       <div class="product-content-title">
-        开发工具
-        <div class="wrapper">
+          Dev Tool
+          <div class="wrapper">
           <div class="tran"></div>
         </div>
       </div>
