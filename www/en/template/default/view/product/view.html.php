@@ -96,7 +96,7 @@ js::execute($product->js);
           <?php foreach ($document_article as $key => $value) { ?>
             <tr class='main-ctg'>
               <td class="a"><?php echo $key ?></td>
-              <td class="b">Release</td>
+              <td class="b">Update time</td>
 <!--              <td class="b">大小</td>-->
               <td class="b">Download</td>
             </tr>
