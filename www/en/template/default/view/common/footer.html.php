@@ -56,27 +56,27 @@
             <!--        --><?php //} ?>
 
             <p class="sub">
-                <a href="/product/c108.html">
+                <a href="/en/index.php/product/c108.html">
                     Security（S）
                 </a>
             </p>
             <p class="sub">
-                <a href="/product/c11.html">
+                <a href="/en/index.php/product/c11.html">
                     MCU（M）
                 </a>
             </p>
             <p class="sub">
-                <a href="/product/c15.html">
+                <a href="/en/index.php/product/c15.html">
                     ASIC（A）
                 </a>
             </p>
             <p class="sub">
-                <a href="/product/c13.html">
+                <a href="/en/index.php/product/c13.html">
                     RF Transceiver（R）
                 </a>
             </p>
             <p class="sub">
-                <a href="/product/c17.html">
+                <a href="/en/index.php/product/c17.html">
                     Touch Key（T）
                 </a>
             </p>
