@@ -185,7 +185,7 @@
 <script type="text/javascript">
     var p = window.location.pathname;
 
-    if (p !== '/' && p !== '/index.php' && p !== '/index.html') {
+    if (p !== '/en/') {
         $('.navigation').css('min-height', '260px');
         $('.navigation').find('.carrousel').height(210);
         $('.navigation').find('.carrousel').find('.main-content').height(190);
